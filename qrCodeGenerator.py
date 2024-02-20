@@ -19,7 +19,7 @@ link = ""
 def grabUserLink():
     # Putting the user into a loop until they have entered a valid URL to meet the condition
     while True:
-        link = input("Enter a valid URL\n> ") 
+        link = input("Enter a valid URL (ensure this begins with https://\n> ") 
         # Validators libary will check if the URL is valid and will either return a TRUE or FALSE value
         validation = validators.url(link)
         # If the link is valid then leave the while loop
